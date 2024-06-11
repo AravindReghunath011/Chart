@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import Menu from './Menu';
+import { MyContext } from '../main';
 
 
 const Project = () => {
@@ -30,8 +32,19 @@ const Project = () => {
   
 
   const [projects, setProjects] = useState(data.opportunities);
+ let context = useContext(MyContext)
+ let {state,setState}  = context
+ useEffect(()=>{
+  setState( [{name:'Home',link:'/'},{name:'Projects',link:'/projects'},{name:'Project-Detail',link:'/project-detail'}])
+ },[])
 
+ 
+  
+  
+  
   return (
+    <>
+   
     <div className='scale-project'>
 
     
@@ -73,6 +86,7 @@ const Project = () => {
       </div>
     </div>
     </div>
+    </>
   );
 };
 
