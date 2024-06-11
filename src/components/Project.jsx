@@ -32,7 +32,7 @@ const Project = () => {
   const [projects, setProjects] = useState(data.opportunities);
 
   return (
-    <div >
+    <div className='scale-project'>
 
     
     <div className="container">
