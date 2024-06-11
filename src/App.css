@@ -3,12 +3,14 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .flower {
@@ -69,6 +71,7 @@ body {
   margin-top: 15px;
   background-color: lightblue;
   outline: 3px solid ;
+  padding: 2px;
 }
 
 .projects {
@@ -76,7 +79,7 @@ body {
   height: 100px;
   color: black;
   background-color: lightblue;
-  border-radius: 50% 50% 0 0;
+  border-radius: 0 0 100px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +168,7 @@ body {
 
 .flex{
   display: flex;
+  justify-content: space-between;
 }
 
 .link{
@@ -172,5 +176,29 @@ body {
   color: black;
 }
 
+.inner-elm{
+  position: absolute;
+  left: 100%;
+  display: flex;
+  gap: 2px;
+  div{
+    background-color: lightblue;
+  }
+}
+
+.scaled-container {
+  transform: scale(0.4); /* Scale down to 50% */
+  transform-origin: top left; 
+ 
+  
+}
+
+.project-main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  justify-content: start;
+  position: relative;
+}
 
 
