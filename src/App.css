@@ -194,9 +194,6 @@ body {
 }
 .scale-project {
   transform: scale(0.7); 
-   
- 
-  
 }
 
 .project-main{
@@ -217,6 +214,11 @@ body {
     gap: 300px;
     justify-content: center;
     align-items: center;
+  }
+
+  .scale-project{
+    margin-left: 150px;
+    transform: scale(0.5);
   }
   
 }
