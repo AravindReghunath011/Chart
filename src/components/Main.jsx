@@ -33,12 +33,6 @@ const Main = () => {
     
   </div>
     </Link>
-    <Link to={'/project-details'}>
-    <div className='scaled-container'>
-    <Project/>
-    
-  </div>
-    </Link>
     
     
       
