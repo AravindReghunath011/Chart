@@ -193,7 +193,7 @@ body {
   
 }
 .scale-project {
-  transform: scale(0.7); /* Scale down to 50% */
+  transform: scale(0.7); 
    
  
   
@@ -205,6 +205,20 @@ body {
   gap: 6rem;
   justify-content: start;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-main{
+    margin-top: 500px;
+    margin-left: 150px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 
