@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { MyContext } from '../main'
 
 const Country = () => {
+  let context = useContext(MyContext)
+  let pages = [{name:'Home',link:'/'}]
+  let {state,setState} = context
+  useEffect(()=>{
+    setState(pages)
+  },[])
   return (
     <div style={{display:'flex',gap:'10px'}}>
 
